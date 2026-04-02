@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+  <div class="chat-header">
+    <div class="bot-avatar">🏦</div>
+    <div class="header-info">
+      <h2>Mudralaya Fintech Ltd.</h2>
+      <p><span class="online-dot"></span> Virtual Assistant • Always Online</p>
+    </div>
+    <div class="lang-btns">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('hi')">HI</button>
+      <button class="lang-btn" onclick="setLang('mr')">MR</button>
+    </div>
+  </div>
+
+  <div class="messages" id="messages"></div>
+
+  <div class="quick-section" id="quick-section">
+    <div class="quick-label">Quick Questions</div>
+  </div>
+
+  <div class="input-bar">
+    <input id="user-input" type="text" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter')sendMsg()" />
+    <button id="send-btn" onclick="sendMsg()">
+      <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+    </button>
+  </div>
+
+  <div class="chat-footer">Made with ❤️ by <span>Mudralaya Fintech Limited</span></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
